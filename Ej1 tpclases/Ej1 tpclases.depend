@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1591938026 source:c:\users\nferr\documents\facu\labo2\objetos\ej1 tpclases\main.cpp
+	<iostream>
+	"Articulo.h"
+	<cstring>
+	"rlutil.h"
+	"Gestor_de_articulos.h"
+
+1591937406 c:\users\nferr\documents\facu\labo2\objetos\ej1 tpclases\articulo.h
+
+1591938046 source:c:\users\nferr\documents\facu\labo2\objetos\ej1 tpclases\articulo.cpp
+	"Articulo.h"
+	<cstring>
+	<iostream>
+
+1591936958 c:\users\nferr\documents\facu\labo2\objetos\ej1 tpclases\gestor_de_articulos.h
+	"Articulo.h"
+
+1591936796 source:c:\users\nferr\documents\facu\labo2\objetos\ej1 tpclases\gestor_de_articulos.cpp
+	"Gestor_de_articulos.h"
+	"Articulo.h"
+
