@@ -13,11 +13,11 @@ class Gestor_de_articulos
         int listarPorCodigo(char*);
 
         static inline Gestor_de_articulos* getInstance(){(s_instance==nullptr)?  new Gestor_de_articulos() : s_instance;}
-
+        //esta es una forma de hacer un if en una misma linea optimizando lectura y ejecucion
 
     private:
         Gestor_de_articulos(){};
-        static Gestor_de_articulos* s_instance;
+        static Gestor_de_articulos* s_instance;//puntero a la instancia para llamarla de fuera con el getInstancia
 
 };
 

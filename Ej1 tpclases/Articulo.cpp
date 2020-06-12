@@ -20,8 +20,8 @@ Articulo::Articulo(const char* desc)
 //metodos de clase
 void Articulo::cargar()
 {
-    //hay manera de conocer e imprimir el nombre del objetoa nivel de ejecucion?
-    //por ejemplo " pelota o paleta "
+    //hay manera de conocer e imprimir el nombre del objeto a nivel de ejecucion aca?
+    //por ejemplo " pelota o paleta " para que el usuario sepa lo que esta cargando?
     std::cout<<"\nCargando un nuevo Articulo"<<std::endl;
     std::cout<<"Ingrese un Codigo de 4 digitos/caracteres: ";
     char cod[4];
@@ -40,7 +40,7 @@ void Articulo::cargar()
     std::cin>>_stock;
     _estado = true;
     std::cin.ignore();
-    //de donde viene el enter en el buffer ?
+    //de donde viene el enter en el buffer que necesito ignorar aca?
 }
 
 void Articulo::mostrar()

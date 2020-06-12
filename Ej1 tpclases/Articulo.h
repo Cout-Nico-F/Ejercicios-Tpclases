@@ -32,7 +32,7 @@ class Articulo
         float _precio;
         int _stock;
         bool _estado;
-        Gestor_de_articulos* _gestorArticulos;//composicion
+        Gestor_de_articulos* _gestorArticulos;//composicion ( Articulo tiene un gestor ) (Esto puedo hacerlo con una referencia & ?no me salio
 };
 
 #endif // ARTICULO_H

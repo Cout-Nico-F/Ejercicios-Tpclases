@@ -32,9 +32,6 @@ int main()
     bool noSalir=true;
     while(noSalir)
     {
-
-
-
         //Ejercicio 1
         char desc1[30],desc2[30];
 
@@ -45,7 +42,7 @@ int main()
         Articulo paleta(desc2);
 
         pelota.setDesc(desc2);
-        paleta.setDesc(desc1);
+        paleta.setDesc(desc1);//Priemero puse los comentarios al reves y con estas lineas lo pongo en orden.
 
         std::cout<<"1 para Ej1 | 2 para Ej2"<<std::endl;
         int res;
@@ -64,12 +61,12 @@ int main()
         case 2:  //Ejercicio 2
 
             Articulo vector_articulos[10];
+
             for(int i=0; i<10; i++)
             {
-
                 vector_articulos[i].cargar();
             }
-            Gestor_de_articulos::getInstance()->listarTodos(vector_articulos,10);
+            Gestor_de_articulos::getInstance()->listarTodos(vector_articulos,10);//get instance me devuelve un puntero a la unica instancia de este gestor singletone
             break;
         }
 

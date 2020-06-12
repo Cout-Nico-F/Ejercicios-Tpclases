@@ -1,8 +1,7 @@
 #include "Gestor_de_articulos.h"
 #include "Articulo.h"
 
-Gestor_de_articulos* Gestor_de_articulos::s_instance = nullptr;
-
+Gestor_de_articulos* Gestor_de_articulos::s_instance = nullptr;// se inicializa el puntero de la instancia estatica (unica) hacia null
 
 Gestor_de_articulos::~Gestor_de_articulos()
 {
