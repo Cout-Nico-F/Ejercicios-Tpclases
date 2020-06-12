@@ -9,8 +9,9 @@ class Gestor_de_articulos
         virtual ~Gestor_de_articulos();
 
         void listarTodos(Articulo*,int);
-        void listarSiPrecioMayorA(float);
+        void listarSiPrecioMayorA(Articulo* lista,int tam, float precio);
         int listarPorCodigo(char*);
+        void cargarTodos(Articulo* lista,int tam);
 
         static inline Gestor_de_articulos* getInstance(){(s_instance==nullptr)?  new Gestor_de_articulos() : s_instance;}
         //esta es una forma de hacer un if en una misma linea optimizando lectura y ejecucion

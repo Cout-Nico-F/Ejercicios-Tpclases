@@ -26,11 +26,13 @@ Dado un valor de stock que se recibe como parámetro devolver la cantidad de artí
 Dado un porcentaje de incremento que se recibe como parámetro, modificar el precio unitario de todos los objetos.
 Todas las funciones reciben además el vector de Artículos.
 */
+
+#define TAM 2
 int main()
 {
 
-    bool noSalir=true;
-    while(noSalir)
+    bool seguir=true;
+    while(seguir)
     {
         //Ejercicio 1
         char desc1[30],desc2[30];
@@ -58,21 +60,35 @@ int main()
             paleta.mostrar();
             break;
 
-        case 2:  //Ejercicio 2
+        case 2:  //Ejercicio 2A
 
-            Articulo vector_articulos[10];
-
-            for(int i=0; i<10; i++)
+            Articulo vector_articulos[TAM];
+            Gestor_de_articulos::getInstance()->cargarTodos(vector_articulos,TAM);
+            bool entrar;
+            std::cout<<"Mostrar la lista completa de Articulos?"<<std::endl;
+            std::cout<<"1- Si | 0- No"<<std::endl;
+            std::cin>>entrar;
+            if(entrar)
+                Gestor_de_articulos::getInstance()->listarTodos(vector_articulos,TAM);//get instance me devuelve un puntero a la unica instancia de este gestor singletone
+            std::cout<<"Mostrar la lista de Articulos con precio mayor al indicado?"<<std::endl;
+            std::cout<<"1- Si | 0- No"<<std::endl;
+            std::cin>>entrar;
+            if(entrar)
             {
-                vector_articulos[i].cargar();
+            float pre;
+            std::cout<<"Mostrar Articulos con precio mayor a: ";
+            std::cin>>pre;
+            Gestor_de_articulos::getInstance()->listarSiPrecioMayorA(vector_articulos,TAM,pre);
             }
-            Gestor_de_articulos::getInstance()->listarTodos(vector_articulos,10);//get instance me devuelve un puntero a la unica instancia de este gestor singletone
+
+
             break;
+
         }
 
 
         std::cout<<"1 Seguir | 0 Salir"<<std::endl;
-        std::cin>>noSalir;
+        std::cin>>seguir;
     }
     return 0;
 }
