@@ -20,3 +20,19 @@
 	"Gestor_de_articulos.h"
 	"Articulo.h"
 
+1591936796 source:c:\users\nferr\documents\facu\labo2\objetos\ej1y2 tp\ejercicios-tpclases\ej1 tpclases\gestor_de_articulos.cpp
+	"Gestor_de_articulos.h"
+	"Articulo.h"
+
+1591936958 c:\users\nferr\documents\facu\labo2\objetos\ej1y2 tp\ejercicios-tpclases\ej1 tpclases\gestor_de_articulos.h
+	"Articulo.h"
+
+1591937406 c:\users\nferr\documents\facu\labo2\objetos\ej1y2 tp\ejercicios-tpclases\ej1 tpclases\articulo.h
+
+1591938026 source:c:\users\nferr\documents\facu\labo2\objetos\ej1y2 tp\ejercicios-tpclases\ej1 tpclases\main.cpp
+	<iostream>
+	"Articulo.h"
+	<cstring>
+	"rlutil.h"
+	"Gestor_de_articulos.h"
+

@@ -4,7 +4,28 @@
 #include "rlutil.h"
 using namespace rlutil;
 #include "Gestor_de_articulos.h"
+/*
+Ej 1
+Hacer una clase de nombre Articulo con las siguientes propiedades:
+Código (char[5]), Descripción (char[30])
+Precio (float), Stock(int), Estado(bool)
+Y los siguientes métodos:
+Cargar()
+Mostrar()
+Gets() para todas las propiedades
+Sets() para todas las propiedades
+Un constructor con parámetros por omisión
+Un constructor para asignar valor a la descripción
 
+Ej2.
+Cargar un vector de 10 Artículos. Luego hacer las siguientes funciones:
+Listar todos los artículos del vector.
+Listar todos los artículos cuyo precio sea mayor a un valor que se ingresa por teclado.
+A partir de un valor de código recibido como parámetro, devolver la posición del objeto que contiene ese código. De no encontrarlo devolver -1.
+Dado un valor de stock que se recibe como parámetro devolver la cantidad de artículos cuyo stock sea inferior a ese valor recibido.
+Dado un porcentaje de incremento que se recibe como parámetro, modificar el precio unitario de todos los objetos.
+Todas las funciones reciben además el vector de Artículos.
+*/
 int main()
 {
 
